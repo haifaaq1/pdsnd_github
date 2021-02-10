@@ -9,7 +9,9 @@ In this project, we will explore data related to bike share systems for three ma
 This code takes in raw input to answer interesting questions about the bike share systems by computing descriptive statistics.
 
 ### Files used
-Include the files used
+new_york_city.csv
+washington.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://udacity.com
