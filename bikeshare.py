@@ -232,7 +232,7 @@ def user_stats(df):
     print()
 
 def row_data(df):
-    """Desplay the row input based on the user input"""
+    """Display the row input based on the user input"""
     start = 0
     end = 5
     while True:
