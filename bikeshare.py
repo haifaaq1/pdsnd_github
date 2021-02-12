@@ -201,28 +201,23 @@ def user_stats(df):
     start_time = time.time()
 
        # TO DO: Display counts of user types
-    user_types_count = df['User Type'].value_counts()
-    print('The count of user types based on the given filtered data:\n\n', user_types_count.to_string())
+    print('The count of user types based on the given filtered data:\n\n', df['User Type'].value_counts().to_string())
     print()
 
     # TO DO: Display counts of gender
 
     if 'Gender' in df:
-        counts_of_gender = df['Gender'].value_counts()
-        print('The count of user gender based on the given filtered data:\n\n', counts_of_gender.to_string())
+        print('The count of user gender based on the given filtered data:\n\n', df['Gender'].value_counts().to_string())
         print()
     else:
         pass
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
-        earliest_birth_year = df['Birth Year'].min()
-        most_recent_birth_year = df['Birth Year'].max()
-        most_common_birth_year = df['Birth Year'].mode()
-        print('The earliest birth year based on the given filtered data:\n\n', int(earliest_birth_year))
+        print('The earliest birth year based on the given filtered data:\n\n', int(df['Birth Year'].min()))
         print()
-        print('The most recent birth year based on the given filtered data:\n\n', int(most_recent_birth_year))
+        print('The most recent birth year based on the given filtered data:\n\n', int(df['Birth Year'].max()))
         print()
-        print('The most common birth year based on the given filtered data:\n\n', int(most_common_birth_year[0]))
+        print('The most common birth year based on the given filtered data:\n\n', int(df['Birth Year'].mode()[0]))
         print()
     else:
         pass
